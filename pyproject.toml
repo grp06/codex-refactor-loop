@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codex-refactor-loop"
+version = "0.1.0"
+description = "A small CLI that runs repeatable multi-turn Codex workflows."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+
+[project.scripts]
+run-cycle = "shell_skills.run_cycle:main"
+
+[tool.setuptools.packages.find]
+include = ["shell_skills*"]

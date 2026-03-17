@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Recent Work"
+  short_description: "Fresh-eyes review of latest ExecPlan work"
+  default_prompt: "Use $review-recent-work to review the most recently implemented ExecPlan, fix issues you find, and score how useful the pass was."
