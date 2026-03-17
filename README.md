@@ -1,6 +1,6 @@
 # `codex-refactor-loop`
 
-`codex-refactor-loop` is a small CLI that drives the Codex app-server through a repeatable multi-turn workflow.
+`codex-refactor-loop` automatically runs the long Codex follow-up loop that pushes a repo toward something cleaner, simpler, and more reliable than you usually get from a one-shot prompt.
 
 The point is simple: if you use Codex directly, chaining a long sequence of messages is manual work. A typical loop looks like this:
 
@@ -15,7 +15,7 @@ The point is simple: if you use Codex directly, chaining a long sequence of mess
 
 That matters because the value is not in any single turn. The value comes from compounding turns. A repo often gets materially better only after Codex has had a chance to propose a direction, sharpen it, implement it, and then critique its own work. `codex-refactor-loop` keeps that whole process on one thread so each step can build on the previous one instead of starting over.
 
-The practical promise is straightforward: run it on a repository, especially in refactor mode, and it should push the codebase toward something cleaner, simpler, and more reliable than you usually get from a one-shot prompt. It also writes a complete run log, so the session is inspectable after the fact rather than something that only existed in the terminal.
+It also writes a complete run log, so the session is inspectable after the fact rather than something that only existed in the terminal.
 
 By default, one cycle is:
 
